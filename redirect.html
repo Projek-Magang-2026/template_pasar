@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghubungkan... — Pasar Connect WiFi</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="refresh" content="2; url=$(link-redirect)">
+    <script>
+        function doRedirect() {
+            setTimeout(function() {
+                const isLocal = window.location.hostname === 'localhost' ||
+                                window.location.hostname === '127.0.0.1' ||
+                                window.location.protocol === 'file:';
+                if (isLocal) {
+                    window.location.href = "status.html";
+                } else {
+                    window.location.href = "$(link-redirect)";
+                }
+            }, 2000);
+        }
+    </script>
+</head>
+<body onload="doRedirect()">
+
+<div class="app-container" style="justify-content: center; align-items: center; min-height: 100vh; padding: 28px 20px;">
+
+    <!-- Header -->
+    <header class="app-header" style="position: absolute; top: 0; left: 0; right: 0;">
+        <div class="header-title-wrapper">
+            <svg class="wifi-pulse-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M1.371 8.143a.75.75 0 0 1 1.022-.24 15.618 15.618 0 0 1 19.214 0 .75.75 0 1 1-.782 1.28 14.118 14.118 0 0 0-17.65 0 .75.75 0 0 1-1.804-1.04ZM4.143 11.23a.75.75 0 0 1 1.002-.276 11.118 11.118 0 0 1 13.71 0 .75.75 0 1 1-.84 1.246 9.618 9.618 0 0 0-11.87 0 .75.75 0 0 1-1.002-.97ZM6.963 14.28a.75.75 0 0 1 .978-.328 6.618 6.618 0 0 1 8.118 0 .75.75 0 1 1-.896 1.206 5.118 5.118 0 0 0-6.222 0 .75.75 0 0 1-.978-.878ZM9.75 17.25a.75.75 0 0 1 1.097-.66 2.13 2.13 0 0 1 2.306 0 .75.75 0 1 1-.818 1.258.63.63 0 0 0-.67 0 .75.75 0 0 1-.915-.598Z" clip-rule="evenodd" />
+            </svg>
+            <span>Pasar Connect</span>
+        </div>
+        <span class="header-status">ONLINE</span>
+    </header>
+
+    <!-- Redirect Card -->
+    <main class="main-card" style="flex: none; width: 100%; max-width: 340px; border: 1.5px solid var(--border); border-radius: 20px; padding: 36px 24px; text-align: center; margin-top: 60px; box-shadow: var(--shadow-md);">
+
+        <!-- Animated WiFi Icon -->
+        <div style="width: 60px; height: 60px; border-radius: 18px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; box-shadow: 0 6px 20px rgba(249,115,22,0.3);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" style="width:28px;height:28px;" class="wifi-pulse-icon">
+                <path fill-rule="evenodd" d="M1.371 8.143a.75.75 0 0 1 1.022-.24 15.618 15.618 0 0 1 19.214 0 .75.75 0 1 1-.782 1.28 14.118 14.118 0 0 0-17.65 0 .75.75 0 0 1-1.804-1.04ZM4.143 11.23a.75.75 0 0 1 1.002-.276 11.118 11.118 0 0 1 13.71 0 .75.75 0 1 1-.84 1.246 9.618 9.618 0 0 0-11.87 0 .75.75 0 0 1-1.002-.97ZM6.963 14.28a.75.75 0 0 1 .978-.328 6.618 6.618 0 0 1 8.118 0 .75.75 0 1 1-.896 1.206 5.118 5.118 0 0 0-6.222 0 .75.75 0 0 1-.978-.878ZM9.75 17.25a.75.75 0 0 1 1.097-.66 2.13 2.13 0 0 1 2.306 0 .75.75 0 1 1-.818 1.258.63.63 0 0 0-.67 0 .75.75 0 0 1-.915-.598Z" clip-rule="evenodd" />
+            </svg>
+        </div>
+
+        <div class="portal-welcome" style="margin-bottom: 0;">
+            <h1 class="portal-title" style="font-size: 17px;">Menghubungkan...</h1>
+            <p class="portal-subtitle" style="margin-top: 6px;">Menyambungkan perangkat Anda ke Pasar Connect WiFi</p>
+        </div>
+
+        <!-- Loading Dots -->
+        <div class="loading-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <p style="font-size: 11px; color: var(--text-muted); font-weight: 600; line-height: 1.5;">
+            Jika tidak dialihkan otomatis,
+            <a href="status.html" style="color: var(--primary-dark); text-decoration: underline; font-weight: 700;">klik di sini</a>.
+        </p>
+
+        <footer class="brand-footer" style="margin-top: 20px;">
+            &copy; 2026 Pasar Connect
+        </footer>
+    </main>
+
+</div>
+
+</body>
+</html>

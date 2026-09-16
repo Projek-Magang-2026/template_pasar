@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <!-- Background pill -->
+  <rect width="200" height="60" rx="12" fill="#F97316"/>
+  
+  <!-- WiFi icon -->
+  <g transform="translate(14, 10)">
+    <path d="M20 32c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6z" fill="white"/>
+    <path d="M20 22c-5.5 0-10.5 2.2-14.1 5.8l3.5 3.5C12 28.7 15.8 27 20 27s8 1.7 10.6 4.3l3.5-3.5C30.5 24.2 25.5 22 20 22z" fill="white" opacity="0.8"/>
+    <path d="M20 12C11.2 12 3.4 15.7 0 21.6l3.6 3.6C6.8 19.5 13 16 20 16s13.2 3.5 16.4 9.2L40 21.6C36.6 15.7 28.8 12 20 12z" fill="white" opacity="0.5"/>
+  </g>
+  
+  <!-- Brand Name -->
+  <text x="60" y="27" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="13" font-weight="800" fill="white" letter-spacing="-0.3">PASAR</text>
+  <text x="60" y="45" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="13" font-weight="800" fill="rgba(255,255,255,0.75)" letter-spacing="-0.3">CONNECT</text>
+  
+  <!-- Orange dot accent -->
+  <circle cx="154" cy="22" r="4" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="164" cy="22" r="3" fill="rgba(255,255,255,0.25)"/>
+</svg>
